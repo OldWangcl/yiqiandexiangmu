@@ -1,0 +1,19 @@
+<!--pages/list/list.wxml-->
+<!-- <import src='list-item/list-item-detail.wxml'/> -->
+<view class='content'>
+  <view class="img-box" >
+         <image bindtap="bindImgTap" mode="aspectFit" src="{{imageUser}}"></image> 
+    </view>
+    <form bindsubmit="formSubmit">
+      <view class='fixed'>
+      <label class='fixed-label'>姓名：</label>
+      <!--bindinput输入框输入文字输出  -->
+      <input name="Input" type='text'  adjust-position='true' class='fixed-text' maxlength='6' placeholder='{{placeholder}}' focus='true'></input>
+    </view>
+      <button formType="submit" class='btn' catchtap='bindGenerateTap'>随机生成有毒小故事</button>
+    </form>
+  <view class="canvas-box">
+    <canvas  style="width: 686px;height: 686px;" canvas-id="share"/>
+  </view>
+</view>
+ 

@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx23974079eb8ba237",
+	"projectname": "index",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "movie",
+					"pathName": "pages/movie/movie",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "stars",
+					"pathName": "pages/movie/stars/stars-tpl",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dd",
+					"pathName": "pages/movie/more-movie/more-movie",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setting",
+					"pathName": "pages/setting/setting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "movie-comment",
+					"pathName": "pages/movie/movie-comment/movie-comment",
+					"query": ""
+				}
+			]
+		}
+	}
+}

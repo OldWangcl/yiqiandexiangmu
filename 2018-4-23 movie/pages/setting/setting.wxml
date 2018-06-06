@@ -1,0 +1,24 @@
+<!--pages/setting/setting.wxml-->
+<view class='container'>
+  <view class='category-item presonal-info'>
+    <view class='user-avatar'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='user-name'>
+      <view class='user-nickname'>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+      <view class='user-location'></view>
+      <text>所在地:{{userInfo.city}}</text>
+    </view>
+  </view>
+  <view class='device-item'>
+    <block wx:for='{{device}}' wx:for-item='item' wx:key='*this'>
+      <view class='detail-item' catchtap='{{item.tap}}'>
+        <image src='{{item.iconurl}}'></image>
+        <text>{{item.title}}</text>
+        <view class='detail-item-btn'></view>
+      </view>
+    </block>
+  </view>
+</view>

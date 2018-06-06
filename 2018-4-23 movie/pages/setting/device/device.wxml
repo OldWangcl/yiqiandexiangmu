@@ -1,0 +1,35 @@
+<!--pages/setting/device/device.wxml-->
+<view class='container'>
+  <view class='category-item'>
+    <block wx:for='{{phoneInfo}}' wx:for-item='item'>
+      <view class='detail-item'>
+        <text>{{item.key}}</text>
+        <text>{{item.val}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='category-item'>
+    <block wx:for='{{softInfo}}' wx:for-item='item'>
+      <view class='detail-item'>
+        <text>{{item.key}}</text>
+        <text>{{item.val}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='category-item'>
+    <block wx:for='{{screenInfo}}' wx:for-item='item'>
+      <view class='detail-item'>
+        <text>{{item.key}}</text>
+        <text>{{item.val}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='category-item'>
+    <block wx:for='{{widhInfo}}' wx:for-item='item'>
+      <view class='detail-item'>
+        <text>{{item.key}}</text>
+        <text>{{item.val}}</text>
+      </view>
+    </block>
+  </view>
+</view>

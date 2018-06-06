@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/logs/logs",
+    "pages/movie/stars/stars-tpl",
+    "pages/movie/score-movie/score-tpl",
+    "pages/movie/movie-list/movie-list-tpl",
+    "pages/movie/movie-grid/movie-grid-tpl",
+    "pages/movie/more-movie/more-movie",
+    "pages/movie/movie-detail/movie-detail",
+    "pages/movie/movie-comment/movie-comment",
+    "pages/setting/setting",
+    "pages/setting/device/device"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#DF7575",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#DF7575"
+  },
+  
+  "tabBar":{
+    "backgroundColor": "#DF7575",
+    "selectedColor": "#fff",
+    "color": "#000",
+    "list":[{
+      "pagePath":"pages/movie/movie",
+      "text":"影讯",
+      "iconPath": "images/icon/icon-movie-01.png",
+      "selectedIconPath": "images/icon/icon-movie-02.png"
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "text": "设置",
+      "iconPath": "images/icon/icon-setting-01.png",
+      "selectedIconPath": "images/icon/icon-setting-02.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 20000,
+    "connectSocket":20000,
+    "uploadFile":20000
+  }  
+}

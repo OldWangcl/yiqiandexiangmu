@@ -1,0 +1,54 @@
+<!--note  -->
+<!--绑定输入，通过数组增加来添加内容显示  -->
+ <!-- <button open-type="getUserInfo"  bindgetuserinfo='login'>个人信息</button>  -->
+<view class='wrap'>
+  <view class='btn'>
+    <text>{{keylist.key2}}({{postList.length}})</text>
+    
+  </view>
+  <view class='say'>
+    <text class='border'>{{keylist.key3}}</text>  
+    <!-- <image src='../../images/car.jpeg'></image> -->
+    <open-data type="userAvatarUrl" class='head'></open-data>
+  </view>
+  <view class='cl'>
+  </view>
+  <view class='comment'>
+  <view class="list">
+  <view class="cc rowup">
+  <view class="s">
+    <view class='swiper' wx:for='{{postList}}' wx:key="tId" wx:for-item='item'>
+      <view class='swiper-hid'>
+      <text>{{item.hide}}</text>
+    </view>
+    <text class='swiper-border'>{{item.txt}}</text> 
+    </view>
+    </view> 
+      <view class="s">
+    <view class='swiper' wx:for='{{postList}}'wx:key="tId"  wx:for-item='item'>
+      <view class='swiper-hid'>
+      <text>{{item.hide}}</text>
+    </view>
+    <text class='swiper-border'>{{item.txt}}</text> 
+    </view>
+    </view> 
+</view>
+</view>
+     <view class='img'>
+      <image src='../../images/icon.png'></image>
+    </view>
+  </view>
+    
+  <view class='send'>
+    <view class='hid'>
+      <text>{{keylist.key4}}</text>
+    </view>
+    <input class='hid-text' type='text' value="{{keyboardInputValue}}"  bindinput="bindCommentInput" placeholder='{{keylist.key5}}' placeholder-style='color:#999;font-size:28rpx;'></input>
+    <button class='sends' catchtap="submitComment">发送</button>
+  </view>
+  <view class='two-btn'>
+    <button wx:if='{{hidden}}' class='button' plain="true" open-type='share'>分享好友</button>
+    <button class='dog'  plain="true" catchtap='onMyLeaveTap' hidden='{{ishidden}}'>{{leave}}</button>
+  </view>
+</view>
+

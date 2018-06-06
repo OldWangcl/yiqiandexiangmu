@@ -1,0 +1,63 @@
+/* pages/list/list.wxss */
+/*图层 start  */
+.content{
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  
+}
+/*背景层 start  */
+.img-box{
+  padding: 10rpx;
+  background-color: #fff;
+  /* border-bottom: 1rpx solid #e5e5e5; */
+  position: relative;
+  width: 750rpx;
+  height: 750rpx;
+}
+.img-box image{
+  width: 730rpx;
+  height: 720rpx;
+  /* background-color: #f9f9f9; */
+}
+/*输入框start  */
+.fixed{
+  border: 1px solid #E0E0E0;
+  margin: 25rpx;
+  border-radius: 8rpx;
+}
+.fixed-text{
+  line-height: 80rpx;
+  height: 80rpx;
+  color: #ADADAD;
+  font-family: Microsoft YaHei;
+}
+.fixed-label{
+  line-height: 80rpx;
+  height: 80rpx;
+  float: left;
+  padding-left: 20rpx;
+  color: #ADADAD;
+  font-family: Microsoft YaHei;
+}
+/*输入框end  */
+/*按钮 start  */
+.btn{
+  margin: 0 88rpx;
+  font-family: Microsoft YaHei;
+  background-color: #FFE001;
+}
+/*按钮 end  */
+.canvas-box{
+  position: fixed;
+  top: 9999rpx;
+  left: 0
+  }
+/*背景层 end  */
+.qrcode{
+  width: 30px;
+  height: 30px;
+}
+/*图层 end  */
+
+

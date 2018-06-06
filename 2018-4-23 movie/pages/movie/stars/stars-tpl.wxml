@@ -1,0 +1,14 @@
+<template name='starsTpl'>
+<!--星星评分 start  -->
+  <view class='stars-wrap'>
+    <view class='stars'>
+      <block wx:for='{{stars}}' wx:for-item='xx' wx:key='*this'>
+        <image wx:if='{{xx===1}}' src='/images/icon/icon-star-01.png'></image>
+        <image wx:if='{{xx===0.5}}' src='/images/icon/icon-star-02.png'></image>
+        <image wx:if='{{xx===0}}' src='/images/icon/icon-star-03.png'></image>
+      </block>
+    </view>
+    <text class='stars-score'>{{score}}</text>
+  </view>
+  <!--星星评分 end  -->
+</template>

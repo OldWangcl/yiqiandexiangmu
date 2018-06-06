@@ -1,0 +1,177 @@
+/* pages/movie/movie-detail/movie-detail.wxss */
+@import '../stars/stars-tpl.wxss';
+page{
+  background-color: #DF7575;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+/*左上角区域 start*/
+.head-img{
+  width: 100%;
+  height: 320rpx;
+  -webkit-filter: blur(20px);
+}
+.head-img-hover{
+  width: 100%;
+  height: 320rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main-title{
+  font-size: 38rpx;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  letter-spacing: 2px;
+}
+.sub-title{
+  font-size: 28rpx;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+  color: #fff;
+}
+.like{
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.highlight-font{
+  font-size: 22rpx;
+  color: #f21146;
+  margin-right: 10rpx;
+
+}
+.plain-font{
+  font-size: 24rpx;
+  color: #666;
+  margin-right: 30rpx;
+}
+/*左上角区域 end*/
+
+/*电影介绍中间区域 start*/
+.movie-img{
+  height:238rpx;
+  width: 175rpx;
+  position: absolute;
+  top: 160rpx;
+  right:30rpx;
+}
+.summary{
+  margin: 40rpx 0 0 40rpx;
+  color: #777777;
+}
+.original-title{
+  color: #2C3C67;
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+.mark{
+  margin-right: 30rpx;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 28rpx;
+}
+.text{
+  font-size: 28rpx;
+  color: #000;
+}
+/*电影介绍中间区域 end*/
+/*分隔线 start*/
+.hr{
+  border-bottom: 1px solid #DB8382;
+  width: 100%;
+  margin-top: 40rpx;
+}
+/*分隔线 end*/
+/*剧情简介 start*/
+.synopsis{
+  display: flex;
+  flex-direction: column;
+  margin: 50rpx 0 0 40rpx;
+}
+.synopsis-font{
+  font-size: 28rpx;
+  color: #fff;
+}
+.summary-content{
+  font-size: 28rpx;
+  text-indent: 2em;
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  line-height: 40rpx;
+  letter-spacing: 1px;
+}
+/*剧情简介 end*/
+/*最下方影人 start*/
+.cast{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+}
+.cast-font{
+  font-size: 32rpx;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+  margin-left: 26rpx;
+}
+.cast-container{
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+  margin-right: 22rpx;
+   width: 170rpx; 
+  text-align: center;
+  white-space: normal;
+}
+.cast-imgs{
+  white-space: nowrap;
+}
+.cast-img{
+  width: 180rpx;
+  height: 210rpx;
+}
+.cast-name{
+  margin: 10rpx auto 0;
+  font-size: 26rpx;
+}
+/*最下方影人 end*/
+
+/*评论点赞 start*/
+.tool{
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin: 20rpx 28rpx 0 0;
+  font-size: 30rpx;
+}
+.tool-item{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30rpx;
+  color: #3D3A38;
+}
+.tool-item image{
+  height: 38rpx;
+  width: 38rpx;
+  vertical-align: -3px;
+  margin-right: 10rpx;
+}
+.comment image{
+  transform: scale(.85);
+}
+/*评论点赞 end*/

@@ -1,0 +1,16 @@
+<!--pages/leave/index.wxml-->
+<view class='page'>
+  <view class='length'>{{keylist.key2}}共：({{postList.length}})条</view>
+  <view class='leave'>
+    <block wx:for='{{postList}}' wx:for-item='item' wx:key='*this'>
+    <view class='two'>
+      <view class='hide'>{{item.hide}}</view>
+      <view class='txt'>{{item.txt}}</view>
+    </view>
+    </block>
+  </view>
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</view>

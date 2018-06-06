@@ -1,0 +1,45 @@
+<!--pages/movie/movie.wxml-->
+<import src='movie-list/movie-list-tpl.wxml' />
+<import src='movie-grid/movie-grid-tpl.wxml' />
+<view class='search'>
+  <image class='QR' src='/images/icon/icon-qr-01.png' catchtap='scanQRCode'></image>
+  <icon type='search' class='search-img' size='13' color='#405f80'></icon>
+  <input type='text' placeholder='战狼2、唐人街探案2' placeholder-class='placeholder' bindfocus='onBindFocus' bindconfirm='onBindConfirm' value='{{inputValue}}'></input>
+  <view class='image' catchtap='onCancelImgTap'>
+  <image wx:if='{{searchPanelShow}}' src='/images/icon/icon-xx-01.png' class='xx-img' ></image>
+  </view>
+</view>
+<view class='wrap' wx:if='{{wrapShow}}'>
+  <!--轮播图 start  -->
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
+    <block wx:for='{{imgs}}' wx:for-item='item' wx:key='item'>
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--轮播图 end  -->
+</view>
+
+<view class='container' wx:if='{{wrapShow}}'>
+  <!--正在热映 start -->
+  <view class='movie-template'>
+    <template is='movieListTpl' data='{{...inTheaters}}' />
+  </view>
+  <!--正在热映 end -->
+
+  <!--即将上映 start -->
+  <view class='movie-template'>
+    <template is='movieListTpl' data='{{...comingSoon}}' />
+  </view>
+  <!--即将上映 end -->
+
+  <!--Top 250 start -->
+  <view class='movie-template'>
+    <template is='movieListTpl' data='{{...top250}}' />
+  </view>
+  <!--Top 250 end -->
+</view>
+<view class='search-panel' wx:if='{{searchPanelShow}}'>
+  <template is='movieGridTpl' data='{{...searchResult}}' />
+</view>

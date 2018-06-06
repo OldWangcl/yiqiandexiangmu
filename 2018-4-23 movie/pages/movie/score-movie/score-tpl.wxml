@@ -1,0 +1,10 @@
+<import src='../stars/stars-tpl.wxml'/>
+<!--评分模板 start  -->
+<template name='movieTpl'>
+    <view class='movie-container' catchtap='catchMovieTap' data-movie-id='{{movieId}}'>
+        <image class='movie-img' src='{{coverageUrl}}'></image>
+        <text class='movie-title'>{{title}}</text>
+        <template is='starsTpl' data='{{stars:stars, score:average}}'/>
+    </view>
+</template>
+<!--评分模板 end  -->

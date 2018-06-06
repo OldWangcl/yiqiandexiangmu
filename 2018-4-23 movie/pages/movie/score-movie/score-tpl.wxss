@@ -1,0 +1,19 @@
+/* pages/movie/score-movie/score-tpl.wxss */
+/*引入stars css 样式  */
+@import '../stars/stars-tpl.wxss';
+.movie-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 22rpx;
+}
+/*图片样式  */
+.movie-img{
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
+}
+/*文字样式  */
+.movie-title{
+  margin-bottom: 16rpx;
+  font-size: 24rpx;
+}

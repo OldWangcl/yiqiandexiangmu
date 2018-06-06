@@ -1,0 +1,9 @@
+<!--pages/share/share.wxml-->
+<view class='content'>
+   <view class='bgc'>
+       <image class='bgc-img'  bindtap='bindImgTap' src='{{imagePath}}'  mode='aspectFit'></image> 
+       <image src='{{qrCode}}'></image>
+  </view> 
+  <button class='btn' bindtap='bindSaveTap'>保存图片</button>
+  <button class='btn-share' open-type='share' bindtap='bindShareTap'>邀请朋友一起玩</button>
+</view>

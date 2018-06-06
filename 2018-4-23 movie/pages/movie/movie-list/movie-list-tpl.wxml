@@ -1,0 +1,22 @@
+<!--pages/movie/movie-list/movie-list-tpl.wxml-->
+<!--引入 score-movie 模板 -->
+<import src='../score-movie/score-tpl.wxml'/>
+<!--更多电影模板页面  -->
+<template name='movieListTpl'>
+    <view class='movie-list-wrap'>
+        <view class='inner-container'>
+            <view class='movie-head'>
+                <text class='slogan'>{{categoryTitle}}</text>
+                <view catchtap='catchMoreTap' class='more' data-category='{{categoryTitle}}'>
+                    <text class='more-text'>更多</text>
+                    <image class='more-img' src='/images/icon/icon-arrow-right.png'></image>
+                </view>
+            </view>
+            <view class='movies-container'>
+            <block wx:for='{{movies}}' wx:for-item='movie' wx:key='*this'>
+                <template is='movieTpl' data='{{...movie}}'/>
+            </block>
+            </view>
+        </view>
+    </view>
+</template>

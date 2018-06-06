@@ -1,0 +1,73 @@
+/* pages/index1/index1.wxss */
+/*轮播图start  */
+/* .wrap{
+  width: 100%;
+  height: 200rpx;
+} */
+/*轮播图end  */
+
+/*轮播图start  */
+swiper{
+  width: 100%;
+  height: 450rpx;
+}
+swiper image{
+  width: 100%;
+  height: 450rpx;
+}
+/*轮播图end  */
+/*content start  */
+.content{
+  margin-top: 10rpx;
+  text-align: center;
+  background: #F7F7F7; /*证书恶搞背景色可去除 */
+  padding-bottom: 10rpx;
+}
+.book{
+  font-size: 30rpx;
+}
+/*内容层背景色  */
+.content-bgc{
+   background-color: #F7F7F7; 
+  /* background-color: #00ff00; */
+  /* width: 100%; */
+   float: left; 
+  padding-right: 16rpx;
+  /* height: 1250rpx; */
+}
+/*辅助边框线可去除  */
+.first{
+  /* border: 1px solid #fff;  */
+  /* width: 724rpx;   */
+  height: 300rpx;  
+  /* margin-left: 10rpx;    */ 
+  padding-top: 10rpx;
+  float: left;
+
+}
+/*图片背景层  */
+.img-bgc{
+  width: 356rpx;
+  height: 300rpx;
+  float: left;
+  margin-left: 11rpx;
+  margin-right: 0; 
+  background-color: #fff;
+  
+}
+/*图片样式  */
+.content-img{
+  margin-top: 10rpx;
+  width: 356rpx;
+  height: 200rpx;
+}
+/*文本样式  */
+.text{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+/*content end  */
+/*轮播图start  */
+
+/*轮播图end  */

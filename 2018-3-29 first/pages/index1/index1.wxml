@@ -1,0 +1,29 @@
+<!--pages/index1/index1.wxml-->
+<view class='wrap'>
+    <!--轮播图start  -->
+    <swiper indicator-dots='{{indicatorDots}}' interval='{{interval}}' autoplay='{{autoplay}}' circular='{{circular}}'>
+    <block wx:for='{{imagerUsers}}' wx:for-item='item1'>
+      <swiper-item>
+        <image src='{{item1}}' mode='aspectFill'></image>
+       </swiper-item>
+    </block>
+    </swiper>
+    <!--轮播图end  -->
+    <view class='content'>
+      <text class='book'>恶搞类型</text>
+    </view>
+    <!--内容层 start  -->
+    <view class='content-bgc'>
+      <block wx:for="{{postList}}" wx:for-item='item' wx:for-index='idx'>
+        <view class='first' catchtap='onTapList' data-post-id='{{item.postId}}' data-sizeid='{{item.size}}' data-xid='{{item.x}}' data-yid='{{item.y}}' data-widthid='{{item.width}}' data-heightid='{{item.height}}' data-styleid='{{item.style}}' data-qrxid='{{item.qrx}}' data-qryid='{{item.qry}}' data-qrwid='{{item.qrw}}' data-qrhid='{{item.qrh}}' >
+        <view class='img-bgc'>
+          <image src='{{item.url}}' class='content-img' mode='aspectFill' ></image>
+          <view class='text'>
+          <text>{{item.text}}</text>
+          </view>
+        </view> 
+      </view>
+     </block>
+   </view>
+  <!--内容层 end  -->
+</view>

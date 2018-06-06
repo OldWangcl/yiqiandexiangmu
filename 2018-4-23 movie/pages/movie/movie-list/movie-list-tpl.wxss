@@ -1,0 +1,34 @@
+/* pages/movie/movie-list/movie-list-tpl.wxss */
+@import '../score-movie/score-tpl.wxss';
+.movie-list-wrap{
+  display: flex;
+  flex-direction: column;
+  background-color: #DF7575;
+}
+.inner-container{
+  margin: 0 auto 20rpx;
+}
+.movie-head{
+  padding: 30rpx 20rpx 22rpx;
+}
+.slogan{
+  font-size: 24rpx;
+}
+.more{
+  float: right;
+}
+.more-text{
+  margin-right: 10rpx;
+  color: #4A6141;
+  vertical-align: middle;
+  font-size: 28rpx;
+}
+.more-img{
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+.movies-container{
+  display: flex;
+  flex-direction: row;
+}
